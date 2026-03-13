@@ -1,5 +1,7 @@
+
 // Inclusion de librerias
 #include <U8g2lib.h>
+
 
 /* ----------------------------------------------------------------------------------------------------- */
 
@@ -16,6 +18,8 @@ void setup()
   Serial.begin(9600);
   Serial.println(F("OLED test"));
   u8g2.begin();
+  pinMode(20, OUTPUT);
+  pinMode(21, OUTPUT);
 }
   
 void loop() 
